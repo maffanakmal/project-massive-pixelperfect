@@ -1,4 +1,5 @@
 import React from 'react'
+import googleImg from "../assets/google-logo.png"
 
 const LoginForm = () => {
     return (
@@ -20,11 +21,11 @@ const LoginForm = () => {
                     <a href="">Forgot Password</a>
                 </div>
                 <div className="mb-3">
-                    <button type="submit" className="btn btn-primary btn-lg w-100 fs-6">Login</button>
+                    <button type="submit" className="btn-login w-100 fs-6">Login</button>
                 </div>
                 <p className='text-center'>or login with</p>
                 <div className="mb-3">
-                    <button type="submit" className="btn btn-primary btn-lg w-100 fs-6">Login with google</button>
+                    <button type="submit" className="btn-register w-100 fs-6"><img src={googleImg} alt=""/>Login with google</button>
                 </div>
                 <div className="mb-3 d-flex justify-content-center">
                     <p>Don't have an account? </p>

@@ -4,6 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './dist/css/main.css'
+import './dist/css/login.css'
+import './dist/css/profileSetting.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -26,7 +26,7 @@ const NavbarComp = () => {
         <Navbar expand="lg" className={changeColor ? "nav-active" : ""}>
             <Container>
                 <Navbar.Brand href="#home" className='fs-3 fw-bold'>
-                    <img src={navLogo} alt="PieNote" width='36px' />
+                    <NavLink to='/'><img src={navLogo} alt="PieNote" width='36px'/></NavLink>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -47,8 +47,8 @@ const NavbarComp = () => {
                         ))}
                     </Nav>
                     <div>
-                        <NavLink className='btn' to='/login'>Login</NavLink>
-                        <NavLink className='btn' to='/register'>Sign Up</NavLink>
+                        <NavLink className='btn-nav-login' to='/login'>Login</NavLink>
+                        <NavLink className='btn-nav-register' to='/register'>Sign Up <i class="fa-solid fa-angle-right"></i></NavLink>
                     </div>
                 </Navbar.Collapse>
             </Container>

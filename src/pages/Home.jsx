@@ -85,24 +85,24 @@ const Home = () => {
                     </Row>
                     <Row className="p-lg-5 p-4">
                         <Col className="d-flex justify-content-center">
-                            <p>
-                                Trusted by more than <span>500,000+</span>
+                            <p className="text-white">
+                                Trusted by more than <span className="fw-bold">500,000+</span>
                                 <br />
                                 active users across the globe{" "}
                             </p>
                         </Col>
                         <Col>
                             <div className="d-flex justify-content-center align-items-center">
-                                <h1 className="px-3">50K</h1>
-                                <p>
+                                <h1 className="px-3 text-white fw-bold">50K</h1>
+                                <p className="text-white">
                                     Rating <br /> User
                                 </p>
                             </div>
                         </Col>
                         <Col>
                             <div className="d-flex justify-content-center align-items-center">
-                                <h1 className="px-3">80%</h1>
-                                <p>
+                                <h1 className="px-3 text-white fw-bold">80%</h1>
+                                <p className="text-white">
                                     Satisfied and <br /> Happy Clients
                                 </p>
                             </div>
@@ -128,7 +128,7 @@ const Home = () => {
                                 <Col key={choose.id} className="choose-card mx-3">
                                     <div className="choose p-lg-5 p-4">
                                         <img src={choose.image} className="mb-3" alt="" />
-                                        <h1>{choose.title}</h1>
+                                        <h4>{choose.title}</h4>
                                     </div>
                                 </Col>
                             );
@@ -223,12 +223,12 @@ const Home = () => {
             <div className="section-padding faq w-100 min-vh-100 d-flex align-items-center justify-content-center" id="contact">
                 <Container className="faq-wrapper border rounded-3 mx-3">
                     <Row className="d-flex align-items-center p-lg-5 p-4">
-                        <Col lg="6" className="pt-lg-0">
-                            <h3 className="text-white">
+                        <Col lg="6" className="pt-lg-0 d-flex flex-column align-items-center justify-content-center">
+                            <h3 className="text-white text-center">
                                 Gimana? Masih bimbang dan bingung?
                             </h3>
-                            <h3>Ini jawabannya!</h3>
-                            <button>FAQ</button>
+                            <h2 className="text-white text-center fw-bold">Ini jawabannya!</h2>
+                            <button className="btn-faq mt-4 fw-bolder rounded-5 w-25 fs-6">FAQ</button>
                         </Col>
                         <Col lg="6" className="text-center">
                             <img src={faqImg} alt="" />
