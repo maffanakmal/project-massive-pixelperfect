@@ -16,9 +16,11 @@ import partnerImg2 from "../assets/img/msib.png"
 import partnerImg3 from "../assets/img/celerates.png"
 import partnerImg4 from "../assets/img/celerates-school.png"
 
-import People1 from "../assets/img/testimonial/people-1.jpg";
-import People2 from "../assets/img/testimonial/people-2.jpg";
-import People3 from "../assets/img/testimonial/people-3.jpg";
+import People1 from "../assets/img/testimonial/people-1.webp";
+import People2 from "../assets/img/testimonial/people-2.webp";
+import People3 from "../assets/img/testimonial/people-3.webp";
+import People4 from "../assets/img/testimonial/people-4.webp";
+import People5 from "../assets/img/testimonial/people-5.webp";
 
 
 export const navLinks = [
@@ -196,7 +198,7 @@ export const testimonials = [
     star5: "fa-solid fa-star-half-stroke",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
     image: People1,
-    name: "People 1",
+    name: "Anne-marie",
   },
   {
     id: 2,
@@ -207,7 +209,7 @@ export const testimonials = [
     star5: "fa-solid fa-star-half-stroke",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
     image: People2,
-    name: "People 2",
+    name: "Avril Lavingne",
   },
   {
     id: 3,
@@ -218,7 +220,7 @@ export const testimonials = [
     star5: "fa-solid fa-star-half-stroke",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
     image: People3,
-    name: "People 3",
+    name: "Adele",
   },
   {
     id: 4,
@@ -228,8 +230,8 @@ export const testimonials = [
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star-half-stroke",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
-    image: People3,
-    name: "People 4",
+    image: People4,
+    name: "Hayley Williams",
   },
   {
     id: 5,
@@ -239,7 +241,7 @@ export const testimonials = [
     star4: "fa-solid fa-star",
     star5: "fa-solid fa-star-half-stroke",
     desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor, saepe a. Quod eos non, dolores sapiente dicta quam esse reprehenderit explicabo vitae nesciunt ut laborum harum, vel optio corporis voluptatem?",
-    image: People3,
-    name: "People 5",
+    image: People5,
+    name: "Selena Gomez",
   },
 ];

@@ -14,6 +14,8 @@ import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
 const Home = () => {
+    
+
     return (
         <div className="home-page">
             <header id="home" className="w-100 min-vh-100 d-flex align-items-center justify-content-center">
@@ -53,7 +55,9 @@ const Home = () => {
                                     key={feature.id}
                                     className="feature-card border rounded-2"
                                 >
-                                    <div className="feature p-lg-5 p-4">
+                                    <div className="feature p-lg-5 p-4
+                                        
+                                    ">
                                         <img src={feature.image} alt="" />
                                         <h5 className="mt-4 mb-3">{feature.title}</h5>
                                         <p>{feature.desc}</p>
@@ -208,7 +212,7 @@ const Home = () => {
                                             <i className={testimonial.star5}></i>
                                         </div>
                                         <p>{testimonial.desc}</p>
-                                        <div className="testimonial-profile">
+                                        <div className="testimonial-profile d-flex flex-column justify-content-center align-items-center">
                                             <img className="mb-2" src={testimonial.image} alt="" />
                                             <h5 className="m-0">{testimonial.name}</h5>
                                         </div>
