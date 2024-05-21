@@ -1,5 +1,6 @@
 import React from 'react'
 import googleImg from "../assets/google-logo.png"
+import { NavLink } from 'react-router-dom'
 
 const LoginForm = () => {
     return (
@@ -18,7 +19,7 @@ const LoginForm = () => {
                         <input type="checkbox" className="form-check-input" id="rememberMe" />
                         <label className="form-check-label" for="rememberMe">Remember Me</label>
                     </div>
-                    <a href="">Forgot Password</a>
+                    <NavLink to="/profileSetting">Forgot Password</NavLink>
                 </div>
                 <div className="mb-3">
                     <button type="submit" className="btn-login w-100 fs-6">Login</button>
@@ -29,7 +30,7 @@ const LoginForm = () => {
                 </div>
                 <div className="mb-3 d-flex justify-content-center">
                     <p>Don't have an account? </p>
-                    <a href="">Sign Up</a>
+                    <NavLink to="/register">Sign Up</NavLink>
                 </div>
             </form>
         </>

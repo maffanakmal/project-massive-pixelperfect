@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 const RegisterForm = () => {
     return (
@@ -31,7 +32,7 @@ const RegisterForm = () => {
                 </div>
                 <div className="d-flex justify-content-center">
                     <p>Already have an account?</p>
-                    <a href="">Sign in</a>
+                    <NavLink to="/login">Sign Up</NavLink>
                 </div>
             </form>
         </>
