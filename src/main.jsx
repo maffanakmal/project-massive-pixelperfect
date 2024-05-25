@@ -3,14 +3,13 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './dist/css/main.css'
-import './dist/css/login.css'
-import './dist/css/profileSetting.css'
+import './pages/main.css'
+import './pages/login.css'
+import './pages/profileSetting.css'
+import './pages/catatanKeuangan.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
 );

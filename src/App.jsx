@@ -1,25 +1,25 @@
-import { Routes, Route, useLocation } from "react-router-dom";
-
-import Navbar from "./components/NavbarComp";
-import Footer from "./components/FooterComp";
-
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import ProfileNav from "./components/ProfileNav";
+import Footer from "./components/Footer";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import ProfileSetting from "./pages/ProfileSetting";
+import CatatanKeuangan from "./pages/CatatanKeuangan";
 
 function App() {
-  const location = useLocation();
+  // const location = useLocation();
+  // const hideNavbarLandingFooterPaths = ["/login", "/register", "/profile", "/profileSetting"];
 
-  const hideNavbarFooterPaths = ["/login", "/register", "/profile", "/profileSetting"];
-
-  // Check if current path is in the hideNavbarFooterPaths list
-  const shouldHideNavbarFooter = hideNavbarFooterPaths.includes(location.pathname);
+  // const shouldHideNavbarLandingFooter = hideNavbarLandingFooterPaths.includes(location.pathname);
 
   return (
     <>
-      {!shouldHideNavbarFooter && <Navbar />}
+      {/* {!shouldHideNavbarLandingFooter && <Navbar />} */}
+      
+      {/* <ProfileNav/> */}
 
       <Routes>
         <Route path="/" element={<Home />} />
@@ -27,9 +27,10 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/profileSetting" element={<ProfileSetting />} />
+        <Route path="/catatankeuangan" element={<CatatanKeuangan />} />
       </Routes>
 
-      {!shouldHideNavbarFooter && <Footer />}
+      {/* {!shouldHideNavbarLandingFooter && <Footer />} */}
     </>
   );
 }

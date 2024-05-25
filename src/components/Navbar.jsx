@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react'
-import { Navbar, Container, Nav } from 'react-bootstrap'
+import { Navbar, Container, Nav, Dropdown } from 'react-bootstrap'
 import { navLinks } from '../assets/index'
 import { NavLink } from 'react-router-dom'
 import { Link } from 'react-scroll'
 import navLogo from '../assets/img/pienotes-logomark-w.png'
+import profileImg from '../assets/img/testimonial/people-1.webp'
 
 const NavbarComp = () => {
     const [changeColor, setChangeColor] = useState(false)
@@ -26,7 +27,7 @@ const NavbarComp = () => {
         <Navbar expand="lg" className={changeColor ? "nav-active" : ""}>
             <Container>
                 <Navbar.Brand href="#home" className='fs-3 fw-bold'>
-                    <NavLink to='/'><img src={navLogo} alt="PieNote" width='36px'/></NavLink>
+                    <NavLink to='/'><img src={navLogo} alt="PieNote" width='36px' /></NavLink>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -46,7 +47,7 @@ const NavbarComp = () => {
                             </div>
                         ))}
                     </Nav>
-                    <div>
+                    <div className='btn-signin'>
                         <NavLink className='btn-nav-login' to='/login'>Login</NavLink>
                         <NavLink className='btn-nav-register' to='/register'>Sign Up <i class="fa-solid fa-angle-right"></i></NavLink>
                     </div>
