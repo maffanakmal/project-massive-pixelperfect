@@ -1,34 +1,59 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
+import './profileSetting.css'
 
 const ProfileSetting = () => {
   return (
     <>
-      <div className='setting-container min-vh-100 d-flex justify-content-center align-items-center'>
-        <div class="settings">
-          <h2 className='text-center'>Pengaturan</h2>
-          <div class="settings-cards">
-            <NavLink to="/profile">
-              <div class="card" data-card="profile">
-                <i class="fa-solid fa-user text-center"></i>
-                <h3>Profile</h3>
-                <p>Kelola informasi akun Anda di sini. Perbarui detail pribadi, email, dan nomor handphone untuk menjaga akun Anda.</p>
-              </div>
-            </NavLink>
-            <div class="card" data-card="security">
-              <i class="fa-solid fa-shield text-center"></i>
-              <h3>Login & security</h3>
-              <p>Keamanan akun Anda adalah prioritas kami. Ganti kata sandi Anda secara berkala untuk menjaga keamanan.</p>
-            </div>
-            <div class="card" data-card="language">
-              <i class="fa-solid fa-language text-center"></i>
-              <h3>Bahasa</h3>
-              <p>Pilih bahasa yang Anda inginkan. Kami menawarkan berbagai pilihan bahasa.</p>
-            </div>
+      <Container className='setting-container min-vh-100 d-flex justify-content-center align-items-center'>
+        <Row className="settings">
+          <h1>Pengaturan</h1>
+          <div className='setting-cards d-flex justify-content-center'>
+
+            <Row>
+              <Col>
+                <div className="card-setting p-3 border bg-light">
+                  <h3> Profile</h3>
+                  <p>Kelola informasi akun Anda di sini. Perbarui detail pribadi, email, dan nomor handphone untuk menjaga akun Anda.</p>
+                </div>
+              </Col>
+              <Col>
+                <div className="card-setting p-3 border bg-light">
+                  <h3>Mata Uang</h3>
+                  <p>Ubah pengaturan mata uang Anda hari ini dan nikmati pengalaman yang lebih personalisasi dan efisien.</p>
+                </div>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col>
+                <div className="card-setting p-3 border bg-light">
+                  <h3>Bahasa</h3>
+                  <p>Pilih bahasa yang Anda inginkan. Kami menawarkan berbagai pilihan bahasa.</p>
+                </div>
+              </Col>
+              <Col>
+                <div className="card-setting p-3 border bg-light">
+                  <h3>Tema Gelap</h3>
+                  <p>Rasakan kesan elegan dan hemat daya dengan Tema Gelap. Aktifkan sekarang untuk gaya yang lebih keren dan baterai yang lebih awet.</p>
+                </div>
+              </Col>
+            </Row>
+
+            <Row>
+              <Col>
+                <div className="card-setting m-2 p-3 border bg-light">
+                  <h3>Login & Security</h3>
+                  <p>Keamanan akun Anda adalah prioritas kami. Ganti kata sandi Anda secara berkala untuk menjaga keamanan.</p>
+                </div>
+              </Col>
+            </Row>
+
           </div>
-        </div>
-      </div>
+
+        </Row>
+      </Container>
     </>
   )
 }

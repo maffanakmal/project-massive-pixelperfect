@@ -12,7 +12,7 @@
 
 /* Jidan */
 .settings {
-    width: 90%;
+    width: 100%;
     padding: 60px;
     background: #e9f5ff;
     margin: 40px auto;
@@ -35,7 +35,7 @@
     gap: 20px;
 }
 
-.settings .card {
+.settings .card-setting {
     background: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -45,22 +45,22 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.settings .card:hover {
+.settings .card-setting:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.settings .card i {
+.settings .card-setting i {
     font-size: 60px;
     margin-bottom: 20px;
 }
 
-.settings .card h3 {
+.settings .card-setting h3 {
     font-size: 20px;
     margin-bottom: 10px;
 }
 
-.settings .card p {
+.settings .card-setting p {
     font-size: 14px;
     color: #666;
 }

@@ -8,6 +8,8 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import ProfileSetting from "./pages/ProfileSetting";
 import CatatanKeuangan from "./pages/CatatanKeuangan";
+import settingBahasa from "./pages/settingBahasa";
+import SettingBahasa from "./pages/settingBahasa";
 
 function App() {
   // const location = useLocation();
@@ -28,6 +30,7 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path="/profileSetting" element={<ProfileSetting />} />
         <Route path="/catatankeuangan" element={<CatatanKeuangan />} />
+        <Route path="/settingBahasa" element={<SettingBahasa/>} />
       </Routes>
 
       {/* {!shouldHideNavbarLandingFooter && <Footer />} */}
